@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .bodyDiv{
+    @apply bg-primaryBodyBg min-h-[390px] h-fit relative lg:static lg:bg-white;
+  }
+  .route-controls {
+    @apply h-8 w-8 border border-solid rounded-full border-white flex items-center justify-center text-white font-bold text-xs;
+  }
+  .route-infoDiv{
+    @apply hidden lg:block uppercase ml-4;
+  }
+  .route-h2{
+    @apply font-medium tracking-widest text-borderColor opacity-90 text-xs;
+  }
+  .route-h3{
+    @apply font-medium text-white tracking-widest text-xs;
+  }
+  .routeDiv{
+    @apply lg:flex lg:items-center lg:justify-center;
+  }
+  .selected-route{
+    @apply bg-currentHighlight text-primaryHeaderColor border-none;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .main-body {
+    @apply max-w-[92%]  bg-white  shadow-2xl rounded-md py-7 px-6 font-Ubuntu absolute left-[4%] -top-[96px] lg:max-w-full lg:static lg:shadow-none lg:py-9 lg:top-0 lg:bg-transparent;
+  }
+  .inputDiv {
+    @apply flex flex-col mb-4  lg:mb-6 relative;
+  }
+  .label {
+    @apply font-medium text-primaryHeaderColor text-sm mb-0.5 lg:mb-1;
+  }
+  .input {
+    @apply border border-borderColor pl-3 pt-1.5 pb-2 rounded-md placeholder:font-medium focus:outline-none focus:border-checkedColor font-medium text-primaryHeaderColor;
+  }
+  .errorinput {
+    @apply border-errorColor transition-all duration-75 ease-in;
+  }
+  .errormessage {
+    @apply text-errorColor absolute right-0 text-sm transition-all duration-150 ease-in; 
+  }
+  .btnDiv{
+    @apply mt-5 flex justify-end;
+  }
+  .btn {
+    @apply text-white bg-primaryHeaderColor  px-5 pt-2 pb-2.5 rounded-md font-medium;
+  }
+  .btn-form {
+    @apply mr-[5%] lg:absolute lg:bottom-5  lg:mr-4;
+  }
+  .back{
+    @apply font-medium text-textColor ml-2 lg:cursor-pointer lg:hover:text-primaryHeaderColor;
+  }
+  .header {
+    @apply text-primaryHeaderColor font-bold font-Ubuntu text-2xl lg:text-3xl;
+  }
+  .headerPara {
+    @apply pt-0.5 text-textColor font-normal lg:pt-1;
+  }
+  .planBoxSelected{
+    @apply bg-primaryBodyBg bg-opacity-75 border-checkedColor;
+  }
+  
+  .btnDivSecondary{
+    @apply  flex justify-between max-w-[90%] mx-auto mt-4 lg:absolute lg:bottom-6 w-[480px] ml-4;
+  }
+}

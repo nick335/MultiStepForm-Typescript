@@ -1,0 +1,32 @@
+{
+  "name": "multi-step-form",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "@types/react-redux": "^7.1.25",
+    "@types/validator": "^13.7.12",
+    "framer-motion": "^10.1.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.6",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}
