@@ -18,12 +18,9 @@ module.exports = {
         textColor: 'hsl(231, 11%, 63%)',
         checking2: 'hsl(254, 31, 80)',
       },
-      backgroundImage: {
-        'mobile-bg': "url('src/assets/bg-sidebar-mobile.svg')",
-        'desktop-bg': "url('src/assets/bg-sidebar-desktop.svg')"
-      },
       fontFamily: {
-        Ubuntu: ['Ubuntu', 'sans-serif']
+        Ubuntu: ['Ubuntu', 'sans-serif'],
+        Montserrat: ['Montserrat', 'sans-serif']
       }
     },
   },

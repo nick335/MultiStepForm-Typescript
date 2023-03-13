@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import validator from 'validator'
-
-interface userform {
+ 
+interface  userform {
   name: string
   email: string
   number: string
@@ -27,8 +27,6 @@ interface userAddons {
 
 interface useraccess {
   plansPage: boolean
-  addsonPage:boolean
-  summaryPage: boolean
   thankyouPage: boolean
 }
 
@@ -68,8 +66,6 @@ const initialState : user = {
     },
     useraccess: {
       plansPage: false,
-      addsonPage: false,
-      summaryPage: false,
       thankyouPage: false
     },
     formerror: {
@@ -114,7 +110,10 @@ const userSlice = createSlice({
           break
         }
         case 'number' : {
-          state.userform.number = input
+          const regex = /^[0-9\b]+$/;
+          if (input === "" || regex.test(input)) {
+            state.userform.number = input
+          }  
           break
         }
         default: 

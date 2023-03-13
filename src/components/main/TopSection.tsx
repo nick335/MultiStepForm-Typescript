@@ -16,7 +16,7 @@ export default function TopSection() {
   }, [location])
 
   return (
-    <section className='w-full h-48 bg-mobile-bg bg-no-repeat bg-center bg-cover px-[5%] flex justify-center pt-8 gap-5 lg:h-full lg:flex-col lg:items-start lg:px-0 lg:pl-8 lg:pt-8 lg:justify-start lg:bg-desktop-bg lg:w-[250px] lg:min-w-[250px] lg:rounded-xl lg:gap-7 '>
+    <section className="w-full h-48 bg-[url('./assets/bg-sidebar-mobile.svg')] bg-no-repeat bg-center bg-cover px-[5%] flex justify-center pt-8 gap-5 lg:h-full lg:flex-col lg:items-start lg:px-0 lg:pl-8 lg:pt-8 lg:justify-start lg:bg-[url('./assets/bg-sidebar-desktop.svg')] lg:w-[250px] lg:min-w-[250px] lg:rounded-xl lg:gap-7 ">
       <div className='routeDiv'>
         <div className={`route-controls ${ pagelocation === '/' ? 'selected-route' : '' }`}>1</div>
         <div className='route-infoDiv'>

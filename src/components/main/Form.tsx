@@ -59,10 +59,10 @@ export default function Form(){
             </div>
             <div className="inputDiv">
               <label className="label">Phone Number</label>
-              <input type="tel" className={`input ${numbererror ? 'errorinput' : ''}`}  placeholder="e.g. +1 234 567 890" ref={numberRef} onFocus = {checkNeedForErrorReset} value={number} onChange={() => dispatch(setInput({
+              <input type="tel" className={`input ${numbererror ? 'errorinput' : ''}`}  placeholder="e.g. 09033516743" ref={numberRef} onFocus = {checkNeedForErrorReset} value={number} onChange={() => dispatch(setInput({
                 type: 'number',
                 payload: numberRef
-              }))}/>
+              }))} maxLength={11}/>
               <p className={`${ numbererror ? 'errormessage' : 'hidden'}`}>{numbererrormessage}
               </p>
             </div>
